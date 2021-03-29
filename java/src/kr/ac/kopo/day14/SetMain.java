@@ -1,6 +1,7 @@
 package kr.ac.kopo.day14;
-
+import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -39,12 +40,12 @@ public class SetMain {
 	System.out.println("iterator() 이용 출력");
 	Iterator<String> ite =set.iterator();
 	while(ite.hasNext()) {
-		System.out.println(ite.next);
+		System.out.println(ite.next());
 	}
 	
 	System.out.println("toArray() 이용 출력");
 	Object[] arr =set.toArray();
-	System.out.println(Array.toString(arr));
+	System.out.println(Arrays.toString(arr));
 	}
-	}
+	
 }
